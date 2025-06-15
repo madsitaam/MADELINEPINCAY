@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Área Técnica</title>
+  <style>
+    body {
+      
+      
+      font-family: 'Comic Sans MS', cursive;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    .encabezado {
+      text-align: center;
+      padding: 20px;
+      animation: moverTexto 5s infinite alternate;
+      background-color: rgba(255, 182, 193, 0.8);
+      font-size: 26px;
+      font-weight: bold;
+      color: darkblue;
+      text-shadow: 2px 2px 5px #fff;
+    }
+
+    @keyframes moverTexto {
+      0% { transform: translateX(0); color: red; }
+      25% { transform: translateX(10px); color: orange; }
+      50% { transform: translateX(0); color: green; }
+      75% { transform: translateX(-10px); color: blue; }
+      100% { transform: translateX(0); color: violet; }
+    }
+
+    .logo {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .logo img {
+      width: 150px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .menu-item {
+      position: relative;
+      list-style: none;
+      flex-grow: 1;
+      text-align: center;
+      min-width: 180px;
+    }
+
+    .menu-item a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: cambiarColor 5s infinite alternate;
+      color: white;
+      font-size: 16px;
+    }
+
+    /* Colores diferentes por módulo */
+    .web { background-color: #d5f5e3 ; }
+    .redes { background-color: #d2b4de  ; }
+    .soporte { background-color: #f9e79f ; }
+    .programacion { background-color: #cc99ff; }
+    .ofimatica { background-color: #66cc99; }
+
+    .menu-item:hover a {
+      filter: brightness(1.2);
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #f1948a ; }
+      min-width: 180px;
+      z-index: 1;
+    }
+
+    .submenu a {
+      padding: 10px;
+      display: block;
+      color: black;
+      font-weight: normal;
+    }
+
+    .menu-item:hover .submenu {
+      display: block;
+    }
+
+    @keyframes cambiarColor {
+      0% { color: white; }
+      25% { color: yellow; }
+      50% { color: cyan; }
+      75% { color: magenta; }
+      100% { color: white; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(0,0,0,0.6);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="encabezado">
+     PROYECTO ÁREA TÉCNICA INFORMÁTICA 2025-2026 <br>
+    <strong>PINCAY MADELINE 3RO "N"</strong>
+  </div>
+
+  <div class="logo">
+    <img src="alumnoO.gif" alt="Estudiante">
+  </div>
+
+  <ul class="menu">
+    <li class="menu-item web">
+      <a href="#">DISEÑO Y DESARROLLO WEB</a>
+                   <ul class="submenu">
+<U>HOSTING</U>  <BR>
+                    <li> <a href="file:///D:/3RO/DISE%C3%91O/INVESTIGACION.html">1er Trimestre</a></li>
+                    <li><a href="#">2do Trimestre</a></li>
+                    <li><a href="#">3er Trimestre</a></li>
+                </ul>
+            </li>
+
+
+    <li class="menu-item redes">
+      <a href="#">SISTEMAS OPERATIVOS Y REDES</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </li>
+    <li class="menu-item soporte">
+      <a href="#">SOPORTE TÉCNICO</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </li>
+    <li class="menu-item programacion">
+      <a href="#">PROGRAMACIÓN Y BASE DE DATOS</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </li>
+    <li class="menu-item ofimatica">
+      <a href="#">APLICACIONES OFIMÁTICAS</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </li>
+  </ul>
+
+  <footer>
+     Desarrollado con amor por Madeline Pincay – Tercer Año "N" 
+  </footer>
+</body>
+</html>
